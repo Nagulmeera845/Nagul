@@ -1,0 +1,15 @@
+package Batch_Execution;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class DataUtility_class {
+	public String getDataFromProperties(String data) throws Exception
+	{
+		FileInputStream fis = new FileInputStream("E:\\Excel\\actitme.propeties");
+		Properties prprts = new Properties();
+		prprts.load(fis);
+		String var = prprts.getProperty(data);
+		return var;
+	}
+}

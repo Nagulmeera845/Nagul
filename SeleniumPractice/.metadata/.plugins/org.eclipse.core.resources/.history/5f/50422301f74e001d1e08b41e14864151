@@ -1,0 +1,31 @@
+package Auto_Suggestion_Handling;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+
+public class Perform_Auto_Suggestion {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.google.co.in/");
+		WebElement element=driver.findElement(By.xpath("//input[@name='q']"));
+		element.sendKeys("Tajmahal");
+		Thread.sleep(3000);
+	List<WebElement> elements=driver.findElements(By.xpath("(//div[@class='OBMEnb'])[1]/ul"));
+		
+		for(WebElement a:elements) {
+			String s=a.getText();
+			if(s.contains("tajmahal images")) {
+				a.click();
+				break;
+	}
+	}
+		Thread.sleep(15000);
+		driver.close();
+
+}}

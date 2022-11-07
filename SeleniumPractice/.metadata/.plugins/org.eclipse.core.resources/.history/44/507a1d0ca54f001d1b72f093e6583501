@@ -1,0 +1,45 @@
+package Batch_Execution;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
+public class Base_class_Batch {
+	WebDriver driver;
+	DataUtility_class duobj = new DataUtility_class();
+	@BeforeClass(alwaysRun = true)
+	public void LaunchBrowser() throws Exception {
+		System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get(duobj.getDataFromProperties("url"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		System.out.println("Authorname is : "+duobj.getDataFromProperties("authorname"));
+		System.out.println("BrowserName is : "+duobj.getDataFromProperties("browsername"));
+		System.out.println("Username is : "+duobj.getDataFromProperties("username"));
+		System.out.println("Password is : "+duobj.getDataFromProperties("password"));
+		System.out.println("Url is : "+duobj.getDataFromProperties("url"));
+	}
+	@BeforeMethod(alwaysRun = true)
+	public void login() throws Exception {
+		driver.get(duobj.getDataFromProperties("username"));
+		driver.get(duobj.getDataFromProperties("password"));
+		driver.findElement(By.xpath("//div[text()='Login ']")).click();
+		
+	}
+	@AfterMethod(alwaysRun = true)
+	public void LogOut() {
+		driver.findElement(By.xpath("//a[text()='Logout']")).click();
+	}
+	@AfterClass(alwaysRun = true)
+	public void CloseBrowser() {
+		driver.close();
+	}
+	
+	
+}

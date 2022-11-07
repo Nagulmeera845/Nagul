@@ -1,0 +1,26 @@
+package Important_Scripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+
+public class Assertion {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.co.in/");
+		driver.findElement(By.name("q")).sendKeys("Selenium");
+		driver.findElement(By.name("btnK")).click();
+String actualname =		driver.findElement(By.xpath("//div[@class='SPZz6b']")).getText();
+	String expected = "Selenium";
+	Assert.assertEquals(actualname, expected);
+	System.out.println("Validated successfully!!");
+	driver.close();
+	
+	
+	
+	}
+
+}

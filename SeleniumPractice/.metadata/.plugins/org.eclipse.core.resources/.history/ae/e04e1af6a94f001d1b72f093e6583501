@@ -1,0 +1,9 @@
+package Batch_Execution;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class Reports_Execution_class extends Base_class_Batch {
+	
+
+}

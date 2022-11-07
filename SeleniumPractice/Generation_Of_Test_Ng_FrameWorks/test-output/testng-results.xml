@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-19T16:21:58 IST" name="Default suite" finished-at="2022-10-19T16:22:36 IST" duration-ms="38069">
+    <groups>
+    </groups>
+    <test started-at="2022-10-19T16:21:58 IST" name="Default test" finished-at="2022-10-19T16:22:36 IST" duration-ms="38069">
+      <class name="Scheduling_with_Datautility_Base_class.Baseclass">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Scheduling_with_Datautility_Base_class.Baseclass@5bd03f44]" started-at="2022-10-19T16:21:58 IST" name="launchBrowser" finished-at="2022-10-19T16:22:22 IST" duration-ms="23266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Scheduling_with_Datautility_Base_class.Baseclass@5bd03f44]" started-at="2022-10-19T16:22:22 IST" name="login" finished-at="2022-10-19T16:22:24 IST" duration-ms="2553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="clickOnTask()[pri:0, instance:Scheduling_with_Datautility_Base_class.Baseclass@5bd03f44]" started-at="2022-10-19T16:22:24 IST" name="clickOnTask" finished-at="2022-10-19T16:22:34 IST" duration-ms="9728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnTask -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Scheduling_with_Datautility_Base_class.Baseclass@5bd03f44]" started-at="2022-10-19T16:22:34 IST" name="logout" finished-at="2022-10-19T16:22:36 IST" duration-ms="2018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Scheduling_with_Datautility_Base_class.Baseclass@5bd03f44]" started-at="2022-10-19T16:22:36 IST" name="closeBrowser" finished-at="2022-10-19T16:22:36 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Scheduling_with_Datautility_Base_class.Baseclass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

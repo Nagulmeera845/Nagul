@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;KCSE-3G-2&apos;&#x0D;&#x0A;- Original project: &apos;KCSE-3G-2&apos;&#x0D;&#x0A;- Original element: &apos;Social.Tsepass_Access.java&apos;" description="Delete element" element1="/src&lt;Social{Tsepass_Access.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1664016619109" subPackages="false" version="1.0"/>
+</session>

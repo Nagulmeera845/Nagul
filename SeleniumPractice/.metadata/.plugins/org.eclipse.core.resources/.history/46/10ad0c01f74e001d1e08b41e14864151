@@ -1,0 +1,28 @@
+package Auto_Suggestion_Handling;
+//Access google search for Smthng and print all the suggestion which is visible
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Print_Auto_SuggestionBox {
+ public static void main(String[] args) throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://www.google.co.in/");
+	WebElement element=driver.findElement(By.xpath("//input[@name='q']"));
+	element.sendKeys("Tajmahal");
+	Thread.sleep(3000);
+List<WebElement> elements=driver.findElements(By.xpath("(//div[@class='OBMEnb'])[1]/ul"));
+
+	for(WebElement a:elements) {
+		String s=a.getText();
+		System.out.println(s);
+	}
+	
+	Thread.sleep(3000);
+	driver.close();
+}
+}

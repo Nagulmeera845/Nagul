@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Group_Execution/testng.xml&apos; to &apos;Group_Execution.xml&apos;" description="Rename resource &apos;testng.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="testng.xml" name="Group_Execution.xml" stamp="1666064638695" updateReferences="true"/>
-</session>

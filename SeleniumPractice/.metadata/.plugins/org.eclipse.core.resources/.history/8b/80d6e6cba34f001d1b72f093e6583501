@@ -1,0 +1,13 @@
+package Batch_Execution;
+
+import org.openqa.selenium.By;
+
+public class Users_Execution_class extends Base_class_Batch {
+	
+	public void Users () {
+		
+		driver.findElement(By.xpath("//div[@id='container_users']")).click();
+		System.out.println("Users executed");
+	}
+
+}

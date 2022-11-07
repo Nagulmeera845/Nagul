@@ -1,0 +1,50 @@
+package Batch_Execution;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
+import io.opentelemetry.sdk.metrics.data.Data;
+
+public class Base_class_Batch {
+	
+	WebDriver driver;
+	DataUtility_class du = new DataUtility_class();
+	@BeforeClass(alwaysRun = true)
+	public void LaunchBrowser() throws Exception {
+		System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get(du.getDataFromProperties("url"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		System.out.println("Authorname  is : "+du.getDataFromProperties("authorname"));
+		System.out.println("Browsername is : "+du.getDataFromProperties("browsername"));
+		System.out.println("Username is : "+du.getDataFromProperties("username"));
+		System.out.println("Password is : "+du.getDataFromProperties("password"));
+		System.out.println("Url is : "+du.getDataFromProperties("url"));
+	}
+	@BeforeMethod(alwaysRun = true)
+	public void Login() throws Exception {
+		driver.findElement(By.id("username")).sendKeys(du.getDataFromProperties("username"));
+		driver.findElement(By.name("pwd")).sendKeys(du.getDataFromProperties("passwoord"));
+		
+		driver.findElement(By.xpath("//div[text()='Login ']")).click();
+		
+		
+	}
+	@AfterMethod(alwaysRun = true)
+	public void LogOut() {
+		driver.findElement(By.xpath("//a[text()='Logout']")).click();
+	}
+	@AfterClass(alwaysRun = true)
+	public void CloseBrowser() {
+		driver.close();
+	}
+	   
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Scheduling_with_Datautility_Base_class.DtaUtili&apos; to &apos;DataUtility_class&apos;&#x0D;&#x0A;- Original project: &apos;Generation_Of_Test_Ng_FrameWorks&apos;&#x0D;&#x0A;- Original element: &apos;Scheduling_with_Datautility_Base_class.DtaUtili&apos;&#x0D;&#x0A;- Renamed element: &apos;Scheduling_with_Datautility_Base_class.DataUtility_class&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DtaUtili&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Scheduling_with_Datautility_Base_class{DtaUtili.java[DtaUtili" matchStrategy="1" name="DataUtility_class" qualified="false" references="true" similarDeclarations="false" stamp="1666176648663" textual="false" version="1.0"/>
+</session>

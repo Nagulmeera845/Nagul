@@ -1,0 +1,25 @@
+package Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Script_1 {
+
+	public static void main(String[] args) throws InterruptedException {
+    System.setProperty("webdriver.gecko.driver","E:\\Selenium\\geckodriver.exe");
+    ChromeDriver driver=new ChromeDriver();
+    driver.get("https://accounts.google.com/");
+    Thread.sleep(3000);
+    
+    driver.findElement(By.xpath("//input[@type='email']")).sendKeys("nagulmeera845@gmail.com");
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("//button[@class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 qIypjc TrZEUc lw1w4b']")).click();
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("password")).sendKeys("Nagul@9786");
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("//input[@class='VfPpkd-muHVFf-bMcfAe']")).click();
+    driver.close();
+    
+	}
+
+}

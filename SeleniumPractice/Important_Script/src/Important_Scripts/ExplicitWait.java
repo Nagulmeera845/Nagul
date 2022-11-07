@@ -1,0 +1,28 @@
+package Important_Scripts;
+
+import java.time.Duration;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class ExplicitWait {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://demoqa.com/alerts");
+		driver.findElement(By.id("timerAlertButton")).click();
+		WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(10));
+		w.until(ExpectedConditions.alertIsPresent()); // to check alert is present or not
+		Alert a1 = driver.switchTo().alert();
+		String text = a1.getText(); //we've to fetch & store alert msg
+		a1.accept();
+		System.out.println(text);
+		driver.close();
+		
+	}
+
+}

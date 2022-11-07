@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Frameworks&apos;&#x0D;&#x0A;- Original project: &apos;Frameworks&apos;&#x0D;&#x0A;- Original element: &apos;BasicProgram.Execution_Of_Datautility.java&apos;" description="Delete element" element1="/src&lt;BasicProgram{Execution_Of_Datautility.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1666007213966" subPackages="false" version="1.0"/>
+</session>

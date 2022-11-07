@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Group_Execution.Users_Execution">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logOut"/>
+          <include name="Users"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Group_Execution.Users_Execution -->
+      <class name="Group_Execution.Task_Execution">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logOut"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="Task"/>
+        </methods>
+      </class> <!-- Group_Execution.Task_Execution -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

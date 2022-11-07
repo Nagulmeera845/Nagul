@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-20T13:46:08 IST" name="Suite" finished-at="2022-10-20T13:46:47 IST" duration-ms="39544">
+    <groups>
+    </groups>
+    <test started-at="2022-10-20T13:46:08 IST" name="Test" finished-at="2022-10-20T13:46:47 IST" duration-ms="39544">
+      <class name="DataUtilty_class_Base_class_Parallel_Execution.Users_Execution">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Users_Execution@bef2d72]" started-at="2022-10-20T13:46:08 IST" name="launchBrowser" finished-at="2022-10-20T13:46:26 IST" duration-ms="17661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Users_Execution@bef2d72]" started-at="2022-10-20T13:46:26 IST" name="login" finished-at="2022-10-20T13:46:26 IST" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="User()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Users_Execution@bef2d72]" started-at="2022-10-20T13:46:26 IST" name="User" finished-at="2022-10-20T13:46:37 IST" duration-ms="10404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Users_Execution@bef2d72]" started-at="2022-10-20T13:46:37 IST" name="logOut" finished-at="2022-10-20T13:46:39 IST" duration-ms="2139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Users_Execution@bef2d72]" started-at="2022-10-20T13:46:39 IST" name="closeBrowser" finished-at="2022-10-20T13:46:39 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- DataUtilty_class_Base_class_Parallel_Execution.Users_Execution -->
+      <class name="DataUtilty_class_Base_class_Parallel_Execution.Reports_Execution">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Reports_Execution@49b0b76]" started-at="2022-10-20T13:46:08 IST" name="launchBrowser" finished-at="2022-10-20T13:46:29 IST" duration-ms="20811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Reports_Execution@49b0b76]" started-at="2022-10-20T13:46:29 IST" name="login" finished-at="2022-10-20T13:46:30 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="task()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Reports_Execution@49b0b76]" started-at="2022-10-20T13:46:30 IST" name="task" finished-at="2022-10-20T13:46:44 IST" duration-ms="14707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- task -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Reports_Execution@49b0b76]" started-at="2022-10-20T13:46:44 IST" name="logOut" finished-at="2022-10-20T13:46:47 IST" duration-ms="2894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Reports_Execution@49b0b76]" started-at="2022-10-20T13:46:47 IST" name="closeBrowser" finished-at="2022-10-20T13:46:47 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- DataUtilty_class_Base_class_Parallel_Execution.Reports_Execution -->
+      <class name="DataUtilty_class_Base_class_Parallel_Execution.Task_Execution">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Task_Execution@769f71a9]" started-at="2022-10-20T13:46:08 IST" name="launchBrowser" finished-at="2022-10-20T13:46:22 IST" duration-ms="14200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Task_Execution@769f71a9]" started-at="2022-10-20T13:46:22 IST" name="login" finished-at="2022-10-20T13:46:23 IST" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="task()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Task_Execution@769f71a9]" started-at="2022-10-20T13:46:23 IST" name="task" finished-at="2022-10-20T13:46:32 IST" duration-ms="9218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- task -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Task_Execution@769f71a9]" started-at="2022-10-20T13:46:32 IST" name="logOut" finished-at="2022-10-20T13:46:35 IST" duration-ms="3292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DataUtilty_class_Base_class_Parallel_Execution.Task_Execution@769f71a9]" started-at="2022-10-20T13:46:35 IST" name="closeBrowser" finished-at="2022-10-20T13:46:36 IST" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- DataUtilty_class_Base_class_Parallel_Execution.Task_Execution -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

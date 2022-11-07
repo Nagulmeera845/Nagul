@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Pop_Up_Handling.indow_Pop_Up_Handling&apos; to &apos;window_Pop_Up_Handling&apos;&#x0D;&#x0A;- Original project: &apos;Section_2&apos;&#x0D;&#x0A;- Original element: &apos;Pop_Up_Handling.indow_Pop_Up_Handling&apos;&#x0D;&#x0A;- Renamed element: &apos;Pop_Up_Handling.window_Pop_Up_Handling&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;indow_Pop_Up_Handling&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Pop_Up_Handling{indow_Pop_Up_Handling.java[indow_Pop_Up_Handling" matchStrategy="1" name="window_Pop_Up_Handling" qualified="false" references="true" similarDeclarations="false" stamp="1666326271265" textual="false" version="1.0"/>
+</session>
